@@ -1,0 +1,2430 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (Data Set environmental impact)' inline='true' name='federated.093tyxu07e8ehu1a0rh6o0t5pde4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Data Set environmental impact' name='excel-direct.1p7ykzw1k208601ar3mnk10s2jaw'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ROG/Documents/Data Set environmental impact.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1p7ykzw1k208601ar3mnk10s2jaw' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:N10001:no:A1:N2147483647:0' header='yes' outcome='6'>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='integer' name='Carbon Emissions (kg)' ordinal='1' />
+            <column datatype='integer' name='Water Consumption (liters)' ordinal='2' />
+            <column datatype='integer' name='Energy Usage (kWh)' ordinal='3' />
+            <column datatype='integer' name='Waste Generated (kg)' ordinal='4' />
+            <column datatype='integer' name='Recycling Rate (%)' ordinal='5' />
+            <column datatype='integer' name='Air Quality Index (AQI)' ordinal='6' />
+            <column datatype='string' name='Region' ordinal='7' />
+            <column datatype='string' name='Industry' ordinal='8' />
+            <column datatype='string' name='Product Type' ordinal='9' />
+            <column datatype='string' name='Category' ordinal='10' />
+            <column datatype='string' name='Subcategory' ordinal='11' />
+            <column datatype='string' name='Compliance Level' ordinal='12' />
+            <column datatype='integer' name='Year' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Carbon Emissions (kg)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Carbon Emissions (kg)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Carbon Emissions (kg)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Water Consumption (liters)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Water Consumption (liters)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Water Consumption (liters)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Energy Usage (kWh)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Energy Usage (kWh)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Energy Usage (kWh)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Waste Generated (kg)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Waste Generated (kg)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Waste Generated (kg)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recycling Rate (%)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recycling Rate (%)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Recycling Rate (%)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Air Quality Index (AQI)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Air Quality Index (AQI)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Air Quality Index (AQI)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Industry</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Industry]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Industry</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Product Type</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subcategory</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Subcategory]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Subcategory</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Compliance Level</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Compliance Level]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Compliance Level</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>7</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:N10001:no:A1:N2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Calculation1' datatype='integer' name='[Calculation_1300414397315063808]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0' />
+      </column>
+      <column datatype='string' name='[Compliance Level]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+      <column datatype='integer' datatype-customized='true' name='[Year]' role='dimension' type='ordinal' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_0F453B43B2A2424F8ACC59A7064F97DD]' role='measure' type='quantitative' />
+      <column-instance column='[Compliance Level]' derivation='None' name='[none:Compliance Level:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/ROG/AppData/Local/Temp/TableauTemp/#TableauTemp_0e9708l0tt4v0p192ja6q1khtyl6.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/10/2025 09:03:29 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_0F453B43B2A2424F8ACC59A7064F97DD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Carbon Emissions (kg)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Carbon Emissions (kg)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Carbon Emissions (kg)</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>622</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_0F453B43B2A2424F8ACC59A7064F97DD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Water Consumption (liters)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Water Consumption (liters)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Water Consumption (liters)</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2987</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_0F453B43B2A2424F8ACC59A7064F97DD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Energy Usage (kWh)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Energy Usage (kWh)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Energy Usage (kWh)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2794</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_0F453B43B2A2424F8ACC59A7064F97DD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Waste Generated (kg)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Waste Generated (kg)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Waste Generated (kg)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_0F453B43B2A2424F8ACC59A7064F97DD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recycling Rate (%)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Recycling Rate (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Recycling Rate (%)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_0F453B43B2A2424F8ACC59A7064F97DD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Air Quality Index (AQI)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Air Quality Index (AQI)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Air Quality Index (AQI)</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_0F453B43B2A2424F8ACC59A7064F97DD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_0F453B43B2A2424F8ACC59A7064F97DD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Industry</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Industry]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Industry</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_0F453B43B2A2424F8ACC59A7064F97DD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product Type</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_0F453B43B2A2424F8ACC59A7064F97DD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_0F453B43B2A2424F8ACC59A7064F97DD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Subcategory</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Subcategory]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Subcategory</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_0F453B43B2A2424F8ACC59A7064F97DD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Compliance Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Compliance Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Compliance Level</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_0F453B43B2A2424F8ACC59A7064F97DD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_0F453B43B2A2424F8ACC59A7064F97DD]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Compliance Level:nk]' palette='green_10_0' type='palette'>
+            <map to='#24693d'>
+              <bucket>&quot;Medium&quot;</bucket>
+            </map>
+            <map to='#5ea654'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Region:nk]' palette='green_10_0' type='palette'>
+            <map to='#24693d'>
+              <bucket>&quot;South America&quot;</bucket>
+            </map>
+            <map to='#2c7e41'>
+              <bucket>&quot;North America&quot;</bucket>
+            </map>
+            <map to='#44924e'>
+              <bucket>&quot;Middle East&quot;</bucket>
+            </map>
+            <map to='#5ea654'>
+              <bucket>&quot;Europe&quot;</bucket>
+            </map>
+            <map to='#73ba67'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#8dcf7e'>
+              <bucket>&quot;Asia&quot;</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>&quot;Africa&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_0F453B43B2A2424F8ACC59A7064F97DD'>
+            <properties context=''>
+              <relation connection='excel-direct.1p7ykzw1k208601ar3mnk10s2jaw' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:N10001:no:A1:N2147483647:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='integer' name='Carbon Emissions (kg)' ordinal='1' />
+                  <column datatype='integer' name='Water Consumption (liters)' ordinal='2' />
+                  <column datatype='integer' name='Energy Usage (kWh)' ordinal='3' />
+                  <column datatype='integer' name='Waste Generated (kg)' ordinal='4' />
+                  <column datatype='integer' name='Recycling Rate (%)' ordinal='5' />
+                  <column datatype='integer' name='Air Quality Index (AQI)' ordinal='6' />
+                  <column datatype='string' name='Region' ordinal='7' />
+                  <column datatype='string' name='Industry' ordinal='8' />
+                  <column datatype='string' name='Product Type' ordinal='9' />
+                  <column datatype='string' name='Category' ordinal='10' />
+                  <column datatype='string' name='Subcategory' ordinal='11' />
+                  <column datatype='string' name='Compliance Level' ordinal='12' />
+                  <column datatype='integer' name='Year' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Average Recycling Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Arial Black' fontsize='9'>Average Recycling Rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Data Set environmental impact)' name='federated.093tyxu07e8ehu1a0rh6o0t5pde4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.093tyxu07e8ehu1a0rh6o0t5pde4'>
+            <column datatype='integer' name='[Recycling Rate (%)]' role='measure' type='quantitative' />
+            <column-instance column='[Recycling Rate (%)]' derivation='Avg' name='[avg:Recycling Rate (%):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[avg:Recycling Rate (%):qk]' value='n#,##0.00&quot;%&quot;;-#,##0.00&quot;%&quot;' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#3c7a35' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[avg:Recycling Rate (%):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Bold'>&lt;</run>
+                <run bold='true' fontname='Tableau Bold'>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[avg:Recycling Rate (%):qk]</run>
+                <run bold='true' fontname='Tableau Bold'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0FFAEB66-5072-4FCC-BA63-57FF3D904E07}' />
+    </worksheet>
+    <worksheet name='Carbon Emissions (kg), Recycling Rate (%)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Arial Black' fontsize='7'>Carbon Emissions (kg), Recycling Rate (%)</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Data Set environmental impact)' name='federated.093tyxu07e8ehu1a0rh6o0t5pde4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.093tyxu07e8ehu1a0rh6o0t5pde4'>
+            <column datatype='integer' name='[Carbon Emissions (kg)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Recycling Rate (%)]' role='measure' type='quantitative' />
+            <column-instance column='[Carbon Emissions (kg)]' derivation='Sum' name='[sum:Carbon Emissions (kg):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Recycling Rate (%)]' derivation='Sum' name='[sum:Recycling Rate (%):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Carbon Emissions (kg):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Recycling Rate (\%):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' data-class='subtotal' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Carbon Emissions (kg):qk]' value='normal' />
+            <format attr='font-weight' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Recycling Rate (%):qk]' value='bold' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#3c7a35' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Recycling Rate (%):qk]' />
+              <text column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Carbon Emissions (kg):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Carbon Emissions (kg):qk]</rows>
+        <cols>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Recycling Rate (%):qk]</cols>
+      </table>
+      <simple-id uuid='{EBFBC6C2-76A4-4943-96B7-4AB2EFCCB545}' />
+    </worksheet>
+    <worksheet name='Carbon Emissions (kg), Region'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Arial Black' fontsize='9'>Carbon Emissions (kg), Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Data Set environmental impact)' name='federated.093tyxu07e8ehu1a0rh6o0t5pde4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.093tyxu07e8ehu1a0rh6o0t5pde4'>
+            <column datatype='integer' name='[Carbon Emissions (kg)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Carbon Emissions (kg)]' derivation='Sum' name='[sum:Carbon Emissions (kg):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Region:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Carbon Emissions (kg):qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Carbon Emissions (kg):qk]' value='n#,##0,,.0M;-#,##0,,.0M' />
+            <format attr='vertical-align' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Carbon Emissions (kg):qk]' value='center' />
+            <format attr='wrap' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Carbon Emissions (kg):qk]' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#3c7a35' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Region:nk]' />
+              <text column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Carbon Emissions (kg):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Carbon Emissions (kg):qk]</rows>
+        <cols>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Region:nk]</cols>
+      </table>
+      <simple-id uuid='{38E9E5DE-3D92-4C08-9808-6216E3E95DF3}' />
+    </worksheet>
+    <worksheet name='Compliance Level'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Arial Black' fontsize='9'>Compliance Level</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Data Set environmental impact)' name='federated.093tyxu07e8ehu1a0rh6o0t5pde4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.093tyxu07e8ehu1a0rh6o0t5pde4'>
+            <column caption='Calculation1' datatype='integer' name='[Calculation_1300414397315063808]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column datatype='string' name='[Compliance Level]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+            <column-instance column='[ID]' derivation='Count' name='[cnt:ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Compliance Level]' derivation='None' name='[none:Compliance Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ID]' derivation='Count' name='[pcto:cnt:ID:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_1300414397315063808]' derivation='Sum' name='[sum:Calculation_1300414397315063808:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Calculation_1300414397315063808:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='1' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Calculation_1300414397315063808:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Calculation_1300414397315063808:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[pcto:cnt:ID:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#3c7a35' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Calculation_1300414397315063808:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Compliance Level:nk]' />
+              <wedge-size column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[cnt:ID:qk]' />
+              <text column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[pcto:cnt:ID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Calculation_1300414397315063808:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4612706899642944' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Calculation_1300414397315063808:qk] + [federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Calculation_1300414397315063808:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{484FA342-C73C-42C2-8987-53D0A6210E05}' />
+    </worksheet>
+    <worksheet name='Energy Usage (kWh), Time Dimension'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Arial Black' fontsize='9'>Energy Usage (kWh), Time Dimension</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Data Set environmental impact)' name='federated.093tyxu07e8ehu1a0rh6o0t5pde4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.093tyxu07e8ehu1a0rh6o0t5pde4'>
+            <column datatype='integer' name='[Energy Usage (kWh)]' role='measure' type='quantitative' />
+            <column datatype='integer' datatype-customized='true' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Energy Usage (kWh)]' derivation='Sum' name='[sum:Energy Usage (kWh):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Energy Usage (kWh):qk]' scope='rows' value='false' />
+            <format attr='tick-color' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Year:qk]' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Year:qk]' value='bold' />
+            <format attr='font-size' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Year:qk]' value='8' />
+            <format attr='text-format' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Year:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Energy Usage (kWh):qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#3c7a35' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Energy Usage (kWh):qk]' />
+              <text column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Energy Usage (kWh):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Bold' fontsize='2'>&lt;</run>
+                <run fontname='Tableau Bold' fontsize='2'>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Energy Usage (kWh):qk]</run>
+                <run fontname='Tableau Bold' fontsize='2'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Energy Usage (kWh):qk]</rows>
+        <cols>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{B9808164-2367-4E5C-86D4-7809A127EF19}' />
+    </worksheet>
+    <worksheet name='Filters'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Calibri,sans-serif' fontsize='14'>Filters --&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Data Set environmental impact)' name='federated.093tyxu07e8ehu1a0rh6o0t5pde4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.093tyxu07e8ehu1a0rh6o0t5pde4'>
+            <column datatype='string' name='[Compliance Level]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='integer' datatype-customized='true' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Compliance Level]' derivation='None' name='[none:Compliance Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Type]' derivation='None' name='[none:Product Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Compliance Level:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Compliance Level:nk]' member='&quot;High&quot;' />
+              <groupfilter function='member' level='[none:Compliance Level:nk]' member='&quot;Low&quot;' />
+              <groupfilter function='member' level='[none:Compliance Level:nk]' member='&quot;Medium&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Industry:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Industry:nk]' member='&quot;Automotive&quot;' />
+              <groupfilter function='member' level='[none:Industry:nk]' member='&quot;Construction&quot;' />
+              <groupfilter function='member' level='[none:Industry:nk]' member='&quot;Energy&quot;' />
+              <groupfilter function='member' level='[none:Industry:nk]' member='&quot;Food Processing&quot;' />
+              <groupfilter function='member' level='[none:Industry:nk]' member='&quot;Mining&quot;' />
+              <groupfilter function='member' level='[none:Industry:nk]' member='&quot;Technology&quot;' />
+              <groupfilter function='member' level='[none:Industry:nk]' member='&quot;Textiles&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Product Type:nk]'>
+            <groupfilter function='empty-level' member='[none:Product Type:nk]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Region:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Africa&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Asia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Australia&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Europe&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Middle East&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;North America&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;South America&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year:ok]' member='2021' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2022' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2023' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2024' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Industry:nk]</column>
+            <column>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Region:nk]</column>
+            <column>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Compliance Level:nk]</column>
+            <column>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Product Type:nk]</column>
+            <column>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#3c7a35' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C81E7B09-6EC0-4C41-B539-45423495E2EE}' />
+    </worksheet>
+    <worksheet name='Recycling Rate, Region, Industry'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Arial Black' fontsize='9'>Recycling Rate, Region, Industry</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Data Set environmental impact)' name='federated.093tyxu07e8ehu1a0rh6o0t5pde4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.093tyxu07e8ehu1a0rh6o0t5pde4'>
+            <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Recycling Rate (%)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Recycling Rate (%)]' derivation='Sum' name='[sum:Recycling Rate (%):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Recycling Rate (%):qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#3c7a35' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Recycling Rate (%):qk]' />
+              <size column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Recycling Rate (%):qk]' />
+              <text column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Recycling Rate (%):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Industry:nk]</rows>
+        <cols>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Region:nk]</cols>
+      </table>
+      <simple-id uuid='{09D5B4B3-9257-4E7E-9B9B-14B468180D4C}' />
+    </worksheet>
+    <worksheet name='Total Carbon Emissions'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Arial Black' fontsize='9'>Total Carbon Emissions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Data Set environmental impact)' name='federated.093tyxu07e8ehu1a0rh6o0t5pde4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.093tyxu07e8ehu1a0rh6o0t5pde4'>
+            <column datatype='integer' name='[Carbon Emissions (kg)]' role='measure' type='quantitative' />
+            <column-instance column='[Carbon Emissions (kg)]' derivation='Sum' name='[sum:Carbon Emissions (kg):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#3c7a35' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Carbon Emissions (kg):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Bold'>&lt;</run>
+                <run bold='true' fontname='Tableau Bold'>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Carbon Emissions (kg):qk]</run>
+                <run bold='true' fontname='Tableau Bold'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CC8E3F97-E451-4790-902A-B07A46F3F5CC}' />
+    </worksheet>
+    <worksheet name='Total Energy Usage'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Arial Black' fontsize='9'>Total Energy Usage</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Data Set environmental impact)' name='federated.093tyxu07e8ehu1a0rh6o0t5pde4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.093tyxu07e8ehu1a0rh6o0t5pde4'>
+            <column datatype='integer' name='[Energy Usage (kWh)]' role='measure' type='quantitative' />
+            <column-instance column='[Energy Usage (kWh)]' derivation='Sum' name='[sum:Energy Usage (kWh):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Energy Usage (kWh):qk]' value='n#,##0,.0K&quot;Wh&quot;;-#,##0,.0K&quot;Wh&quot;' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#3c7a35' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Energy Usage (kWh):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Bold'>&lt;</run>
+                <run bold='true' fontname='Tableau Bold'>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Energy Usage (kWh):qk]</run>
+                <run bold='true' fontname='Tableau Bold'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{983E6823-632B-443D-A3E4-E91F2E1E44BB}' />
+    </worksheet>
+    <worksheet name='Total Water Consumption'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Arial Rounded MT Bold' fontsize='9'>Total Water Consumption</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Data Set environmental impact)' name='federated.093tyxu07e8ehu1a0rh6o0t5pde4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.093tyxu07e8ehu1a0rh6o0t5pde4'>
+            <column datatype='integer' name='[Water Consumption (liters)]' role='measure' type='quantitative' />
+            <column-instance column='[Water Consumption (liters)]' derivation='Sum' name='[sum:Water Consumption (liters):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#3c7a35' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Water Consumption (liters):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Bold'>&lt;</run>
+                <run bold='true' fontname='Tableau Bold'>[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Water Consumption (liters):qk]</run>
+                <run bold='true' fontname='Tableau Bold'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{359A7501-10F2-46F1-8E69-285DF567AF0E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Sheet1 (Data Set environmental impact)' name='federated.093tyxu07e8ehu1a0rh6o0t5pde4' />
+      </datasources>
+      <datasource-dependencies datasource='federated.093tyxu07e8ehu1a0rh6o0t5pde4'>
+        <column datatype='string' name='[Compliance Level]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Product Type]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+        <column datatype='integer' datatype-customized='true' name='[Year]' role='dimension' type='ordinal' />
+        <column-instance column='[Compliance Level]' derivation='None' name='[none:Compliance Level:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Product Type]' derivation='None' name='[none:Product Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='40' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98046' id='47' param='horz' type-v2='layout-flow' w='99034' x='483' y='977'>
+            <zone h='98046' id='43' param='vert' type-v2='layout-flow' w='99034' x='483' y='977'>
+              <zone h='98046' id='41' type-v2='layout-basic' w='99034' x='483' y='977'>
+                <zone h='98046' id='33' param='vert' type-v2='layout-flow' w='99034' x='483' y='977'>
+                  <zone fixed-size='45' h='6472' id='30' is-fixed='true' param='horz' type-v2='layout-flow' w='98552' x='724' y='1465'>
+                    <zone fixed-size='101' h='5496' id='32' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ROG/Downloads/Logo.jpg' type-v2='bitmap' w='6578' x='965' y='1953'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone forceUpdate='true' h='5496' id='31' type-v2='text' w='91492' x='7543' y='1953'>
+                      <formatted-text>
+                        <run fontalignment='1' fontcolor='#ffffff' fontname='Wide Latin'>ENVIRONMENT    IMPACT</run>
+                      </formatted-text>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                        <format attr='background-color' value='#3c7a35' />
+                      </zone-style>
+                    </zone>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='48' h='6838' id='44' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98552' x='724' y='7937'>
+                    <zone h='5861' id='45' name='Filters' w='16354' x='966' y='8425'>
+                      <layout-cache fixed-size-h='21' fixed-size-w='70' type-h='fixed' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='5861' id='51' mode='checkdropdown' name='Filters' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Region:nk]' type-v2='filter' w='16355' x='17320' y='8425'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='5861' id='50' mode='checkdropdown' name='Filters' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Compliance Level:nk]' type-v2='filter' w='16355' x='33675' y='8425'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='5861' id='49' mode='checkdropdown' name='Filters' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Product Type:nk]' type-v2='filter' w='16355' x='50030' y='8425'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone fixed-size='160' h='5861' id='46' is-fixed='true' param='vert' type-v2='layout-flow' w='16355' x='66385' y='8425'>
+                      <zone h='5861' id='52' mode='checkdropdown' name='Filters' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Industry:nk]' type-v2='filter' w='16355' x='66385' y='8425'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                    <zone h='5861' id='48' mode='checkdropdown' name='Filters' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Year:ok]' type-v2='filter' w='16294' x='82740' y='8425'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='75' h='10135' id='3' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98552' x='724' y='14775'>
+                    <zone h='9157' id='4' name='Total Carbon Emissions' w='24562' x='966' y='15263'>
+                      <layout-cache cell-count-h='1' non-cell-size-h='37' type-h='cell' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone fixed-size='81' h='9157' id='5' is-fixed='true' name='Average Recycling Rate' w='24502' x='25528' y='15263'>
+                      <layout-cache cell-count-h='1' non-cell-size-h='37' type-h='cell' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone fixed-size='106' h='9157' id='6' is-fixed='true' name='Total Energy Usage' w='24502' x='50030' y='15263'>
+                      <layout-cache cell-count-h='1' non-cell-size-h='37' type-h='cell' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='9157' id='7' name='Total Water Consumption' w='24502' x='74532' y='15263'>
+                      <layout-cache cell-count-h='1' non-cell-size-h='33' type-h='cell' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='296' h='37119' id='17' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98552' x='724' y='24910'>
+                    <zone h='36141' id='18' name='Recycling Rate, Region, Industry' w='49064' x='966' y='25397'>
+                      <layout-cache cell-count-h='7' non-cell-size-h='97' type-h='cell' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='36141' id='21' name='Compliance Level' w='49004' x='50030' y='25397'>
+                      <layout-cache minheight='138' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='36506' id='8' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98552' x='724' y='62029'>
+                    <zone h='35531' id='9' name='Carbon Emissions (kg), Region' w='32709' x='966' y='62515'>
+                      <layout-cache cell-count-w='7' minheight='197' non-cell-size-w='87' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='35531' id='23' name='Carbon Emissions (kg), Recycling Rate (%)' w='32710' x='33675' y='62515'>
+                      <layout-cache minheight='195' type-h='scalable' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='35531' id='15' name='Energy Usage (kWh), Time Dimension' w='32649' x='66385' y='62515'>
+                      <layout-cache minheight='194' minwidth='100' type-h='scalable' type-w='scalable' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2200' minheight='2200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='54' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98046' id='53' param='vert' type-v2='layout-flow' w='99034' x='483' y='977'>
+                <zone fixed-size='36' h='5496' id='32' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ROG/Downloads/Logo.jpg' type-v2='bitmap' w='6578' x='965' y='1953'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5496' id='31' type-v2='text' w='91492' x='7543' y='1953'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#ffffff' fontname='Wide Latin'>ENVIRONMENT    IMPACT</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#3c7a35' />
+                  </zone-style>
+                </zone>
+                <zone h='5861' id='51' mode='checkdropdown' name='Filters' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Region:nk]' type-v2='filter' w='16355' x='17320' y='8425'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5861' id='50' mode='checkdropdown' name='Filters' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Compliance Level:nk]' type-v2='filter' w='16355' x='33675' y='8425'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5861' id='49' mode='checkdropdown' name='Filters' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Product Type:nk]' type-v2='filter' w='16355' x='50030' y='8425'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5861' id='52' mode='checkdropdown' name='Filters' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Industry:nk]' type-v2='filter' w='16355' x='66385' y='8425'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5861' id='48' mode='checkdropdown' name='Filters' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Year:ok]' type-v2='filter' w='16294' x='82740' y='8425'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='39' h='5861' id='45' is-fixed='true' name='Filters' w='16354' x='966' y='8425'>
+                  <layout-cache fixed-size-h='21' fixed-size-w='70' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='9157' id='4' is-fixed='true' name='Total Carbon Emissions' w='24562' x='966' y='15263'>
+                  <layout-cache cell-count-h='1' non-cell-size-h='37' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='9157' id='5' is-fixed='true' name='Average Recycling Rate' w='24502' x='25528' y='15263'>
+                  <layout-cache cell-count-h='1' non-cell-size-h='37' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='9157' id='6' is-fixed='true' name='Total Energy Usage' w='24502' x='50030' y='15263'>
+                  <layout-cache cell-count-h='1' non-cell-size-h='37' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='9157' id='7' is-fixed='true' name='Total Water Consumption' w='24502' x='74532' y='15263'>
+                  <layout-cache cell-count-h='1' non-cell-size-h='33' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36141' id='18' is-fixed='true' name='Recycling Rate, Region, Industry' w='49064' x='966' y='25397'>
+                  <layout-cache cell-count-h='7' non-cell-size-h='97' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36141' id='21' is-fixed='true' name='Compliance Level' w='49004' x='50030' y='25397'>
+                  <layout-cache minheight='138' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='276' h='35531' id='9' is-fixed='true' name='Carbon Emissions (kg), Region' w='32709' x='966' y='62515'>
+                  <layout-cache cell-count-w='7' minheight='197' non-cell-size-w='87' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='276' h='35531' id='23' is-fixed='true' name='Carbon Emissions (kg), Recycling Rate (%)' w='32710' x='33675' y='62515'>
+                  <layout-cache minheight='195' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='276' h='35531' id='15' is-fixed='true' name='Energy Usage (kWh), Time Dimension' w='32649' x='66385' y='62515'>
+                  <layout-cache minheight='194' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A293B786-26C7-4CBB-8CBA-4ABC578A469B}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Total Carbon Emissions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2E841462-C26E-4617-B0AF-55BB734AD7C3}' />
+    </window>
+    <window class='worksheet' name='Average Recycling Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2B98363E-AA0F-4B97-B42B-F5D636B5767B}' />
+    </window>
+    <window class='worksheet' name='Total Energy Usage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BD9E1D83-D4FC-43E1-814F-BF2A5A3260DB}' />
+    </window>
+    <window class='worksheet' name='Total Water Consumption'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{05E93FA4-A2B6-4A6C-BC4D-4E7920757F20}' />
+    </window>
+    <window class='worksheet' name='Carbon Emissions (kg), Region'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{14908B33-B6CA-4BE2-B661-CEFA0875964B}' />
+    </window>
+    <window class='worksheet' name='Energy Usage (kWh), Time Dimension'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='155'>
+            <card pane-specification-id='0' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Energy Usage (kWh):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6948BF7C-EEE7-4DAD-810A-E7AB9962657B}' />
+    </window>
+    <window class='worksheet' name='Recycling Rate, Region, Industry'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Recycling Rate (%):qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[sum:Recycling Rate (%):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{EB46CD8C-BCC0-4498-804D-30B59197B1EB}' />
+    </window>
+    <window class='worksheet' name='Compliance Level'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Compliance Level:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{170F0411-3225-4674-BE38-88ECFB653812}' />
+    </window>
+    <window class='worksheet' name='Carbon Emissions (kg), Recycling Rate (%)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{033890A8-D3C0-4311-AFA4-52249BC00D5E}' />
+    </window>
+    <window class='worksheet' name='Filters'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Year:ok]' type='filter' />
+            <card mode='checkdropdown' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Product Type:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Compliance Level:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Region:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.093tyxu07e8ehu1a0rh6o0t5pde4].[none:Industry:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5A6D52B2-1697-4F6F-B2E0-0CAA3481E036}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Average Recycling Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Carbon Emissions (kg), Recycling Rate (%)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Carbon Emissions (kg), Region'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Compliance Level'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Energy Usage (kWh), Time Dimension'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Filters' />
+        <viewpoint name='Recycling Rate, Region, Industry'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Carbon Emissions'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Energy Usage'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Water Consumption'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='49' />
+      <simple-id uuid='{ABB72B1E-3454-4D93-86E2-D217EAEF7026}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
