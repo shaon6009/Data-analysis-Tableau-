@@ -27,3 +27,22 @@ select * from carsales where cast(annual_income as bigint) > (select avg(cast(an
 select company, model, price, dense_rank() over(partition by  company order by price desc) as rank from carsales;
 select company, model, price, row_number() over(partition by  company order by price desc) as rank from carsales;
 
+-- Running total sales per region--
+select dealer_region, date, sum(price) over(partition by dealer_region order by date) as running_total from carsales;
+
+--Top earning customer per region --
+select * from( select *, row_number() over(partition by dealer_region order by price desc) rrank from carsales) t where rrank=1;
+
+-- Lag function (previous sale price)--
+select model, price, lag(price) over(order by date) as prev_price from carsales;
+
+--Difference from previous sale--
+select model, price, price- lag(price) over(order by date) as difference from carsales;
+
+--Create partitioned table by region--
+--create table car_sales_part using delta partition by(dealer_region) as select * from carsales;-- thsi will work with databricks and pyspark--
+-- SELECT * FROM car_sales_part WHERE Dealer_Region = 'Aurora'; --
+
+--Pre-aggregation (before join)--
+WITH agg AS (
+  SELECT Dealer_Region, SUM(Price) total FROM carsales GROUP BY Dealer_Region)SELECT * FROM agg;
