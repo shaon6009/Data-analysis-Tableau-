@@ -46,3 +46,9 @@ select model, price, price- lag(price) over(order by date) as difference from ca
 --Pre-aggregation (before join)--
 WITH agg AS (
   SELECT Dealer_Region, SUM(Price) total FROM carsales GROUP BY Dealer_Region)SELECT * FROM agg;
+
+  --Post-aggregation--
+  select dealer_region, count(*) from(select * from carsales)t group by Dealer_Region;
+
+
+  
