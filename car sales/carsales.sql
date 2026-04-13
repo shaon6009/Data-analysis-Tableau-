@@ -47,8 +47,18 @@ select model, price, price- lag(price) over(order by date) as difference from ca
 WITH agg AS (
   SELECT Dealer_Region, SUM(Price) total FROM carsales GROUP BY Dealer_Region)SELECT * FROM agg;
 
-  --Post-aggregation--
-  select dealer_region, count(*) from(select * from carsales)t group by Dealer_Region;
+ --Post-aggregation--
+ select dealer_region, count(*) from(select * from carsales)t group by Dealer_Region;
+
+ --Mask income--
+ SELECT 
+CASE WHEN [Annual_Income] > 50000 THEN 'HIGH'
+  ELSE 'LOW'
+END AS income_group FROM carsales;
+
+-- Top 3 regions by revenue --
+select top 10 dealer_region,Dealer_Name, sum(price) as total from carsales group by Dealer_Region, Dealer_Name order by total desc;
+
 
 
   
