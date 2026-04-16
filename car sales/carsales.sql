@@ -59,6 +59,13 @@ END AS income_group FROM carsales;
 -- Top 3 regions by revenue --
 select top 10 dealer_region,Dealer_Name, sum(price) as total from carsales group by Dealer_Region, Dealer_Name order by total desc;
 
+-- Top 3 regions by revenue --
+select top 3 Dealer_Region, sum(price) total from carsales group by Dealer_Region order by total desc;
 
+--Percent contribution per region--
+select dealer_region, round(sum(cast(price as bigint)) * 100.0 / SUM(SUM(CAST(Price AS FLOAT))) OVER(), 2) AS Percentage
+from carsales group by dealer_region;
 
-  
+-- Moving average price --
+select date, avg(price) over(order by date rows between 2 preceding and current row) as moving_avg 
+from carsales;
