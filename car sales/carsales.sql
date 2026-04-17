@@ -69,3 +69,17 @@ from carsales group by dealer_region;
 -- Moving average price --
 select date, avg(price) over(order by date rows between 2 preceding and current row) as moving_avg 
 from carsales;
+
+--Most popular model per company-- 
+select * from(select company, model, count(*) cnt,
+row_number() over(partition by company order by count(*) desc) as rank from carsales group by company, model)t
+where rank=1;
+
+--Price quartiles--
+select company, model,price, ntile(4) over(order by price) as quartile from carsales ;
+
+--Detect duplicate customers--
+select customer_name , count(*) as duplicates from carsales group by Customer_Name having count(*)>1;
+
+--Monthly sales trend-- 
+select MONTH(date)as Month , sum(price) from carsales group by MONTH(date);
