@@ -83,3 +83,20 @@ select customer_name , count(*) as duplicates from carsales group by Customer_Na
 
 --Monthly sales trend-- 
 select MONTH(date)as Month , sum(price) from carsales group by MONTH(date);
+
+-- Cumulative % revenue--
+select dealer_region, sum(price) as revenue, SUM(SUM(Price)) OVER (ORDER BY SUM(Price) DESC) AS cumulative
+from carsales group by Dealer_Region;
+
+--Dense ranking--
+select model, DENSE_RANK() over(order by price desc)as ranking from carsales;
+
+-- Find outliers (price)--
+select * from carsales where price > (select avg(price) + 2*STDEVP(price) from carsales);
+
+--Sales by engine type-- 
+select engine, sum(price) from carsales group by Engine;
+
+-- Combine partition + window-- 
+select dealer_region, sum(price) over(partition by dealer_region) from carsales;
+
