@@ -1,6 +1,6 @@
  create database procurement_spend_analysis;
 
-  use  procurement_spend_analysis;
+use  procurement_spend_analysis;
 
 Select * from procurement_ka;
 
