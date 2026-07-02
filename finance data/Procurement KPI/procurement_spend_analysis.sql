@@ -1,4 +1,4 @@
- create database procurement_spend_analysis;
+create database procurement_spend_analysis;
 
 use  procurement_spend_analysis;
 
