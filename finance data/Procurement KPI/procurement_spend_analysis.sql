@@ -4,6 +4,7 @@ use  procurement_spend_analysis;
 
 Select * from procurement_ka;
 
+
 -- 1. average unit price of all orders
 select avg(unit_price) from procurement_ka;
 
